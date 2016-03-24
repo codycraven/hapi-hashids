@@ -1,0 +1,33 @@
+{
+  "name": "hapi-hashids",
+  "version": "1.0.0",
+  "description": "Hapi.js plugin wrapper for hashids.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codycraven/hapi-hashids.git"
+  },
+  "keywords": [
+    "hapi",
+    "ecosystem:hapi",
+    "plugin",
+    "hashids",
+    "hashid",
+    "ids",
+    "obfuscate",
+    "encode",
+    "decode"
+  ],
+  "author": "Cody Craven <cody@cravencode.com> (https://github.com/codycraven)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codycraven/hapi-hashids/issues"
+  },
+  "homepage": "https://github.com/codycraven/hapi-hashids#readme",
+  "dependencies": {
+    "hashids": "1.0.2"
+  }
+}
