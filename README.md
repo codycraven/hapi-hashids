@@ -10,7 +10,7 @@ Installation
 -------
 
 1. In your [Hapi.js project](http://hapijs.com/tutorials) install hapi-hashids:
-   ```javascript
+   ```
    npm install --save hapi-hashids
    ```
 2. Register the plugin with your `server` object:
@@ -23,7 +23,7 @@ Installation
            alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890', // Optional
        }
    }, (err) => {
-   
+
        if (err) {
            throw err; // Something bad happened
        }
