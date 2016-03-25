@@ -1,5 +1,7 @@
 # hapi-hashids
 
+[![Build Status](https://secure.travis-ci.org/codycraven/hapi-hashids.svg)](http://travis-ci.org/codycraven/hapi-hashids)
+
 -------
 
 [Hapi.js](http://hapijs.com/) plugin wrapper for [hashids](https://github.com/ivanakimov/hashids.node.js).
