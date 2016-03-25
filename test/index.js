@@ -31,7 +31,7 @@ describe('Hashids', () => {
         server.register({
             register: Hashids,
             options: {
-                salt: 'this is my salt',
+                salt: 'this is my salt'
             }
         }, (err) => {
 
@@ -55,7 +55,7 @@ describe('Hashids', () => {
         server.register({
             register: Hashids,
             options: {
-                salt: 'this is my salt',
+                salt: 'this is my salt'
             }
         }, (err) => {
 
