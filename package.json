@@ -4,7 +4,7 @@
   "description": "Hapi.js plugin wrapper for hashids.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -a code -t 100 -L"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,10 @@
   "homepage": "https://github.com/codycraven/hapi-hashids#readme",
   "dependencies": {
     "hashids": "1.0.2"
+  },
+  "devDependencies": {
+    "code": "^2.1.1",
+    "hapi": "^13.2.1",
+    "lab": "^10.3.0"
   }
 }
