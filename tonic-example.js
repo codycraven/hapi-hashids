@@ -9,10 +9,8 @@ const server = new Hapi.Server();
 server.register({
     register: require('hapi-hashids'),
     options: {
-        salt: 'this is my salt',
-        // minHashLength: 8,
-        // alphabet: 'abcdef0123456789',
-    },
+        salt: 'this is my salt'
+    }
 }, (err) => {
 
     if (err) {
