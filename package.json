@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Hapi.js plugin wrapper for hashids.",
   "main": "lib/index.js",
+  "tonicExampleFilename": "tonic-example.js",
   "scripts": {
     "test": "lab -a code -t 100 -L"
   },
