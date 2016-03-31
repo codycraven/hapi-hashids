@@ -88,19 +88,19 @@ We set the minimum id length to **8** (by default it is **0** -- meaning ids wil
 ```javascript
 server.register({
     register: require('hapi-hashids'),
-        options: {
-            salt: 'this is my salt',
-            minHashLength: 0,
-        }
-    }, (err) => {
+    options: {
+        salt: 'this is my salt',
+        minHashLength: 0,
+    }
+}, (err) => {
 
-        if (err) {
-            throw err; // Something bad happened
-        }
-        // This call could be anywhere in the application, as long as server is accessible.
-        server.plugins['hapi-hashids'].encode(1); // gB0NV05e
-        server.plugins['hapi-hashids'].decode('gB0NV05e'); // [ 1 ]
-   });
+    if (err) {
+        throw err; // Something bad happened
+    }
+    // This call could be anywhere in the application, as long as server is accessible.
+    server.plugins['hapi-hashids'].encode(1); // gB0NV05e
+    server.plugins['hapi-hashids'].decode('gB0NV05e'); // [ 1 ]
+});
 ```
 
 #### Specifying custom alphabet
@@ -111,18 +111,18 @@ Here we set the alphabet to consist of valid hex characters: **0123456789abcdef*
 server.register({
     register: require('hapi-hashids'),
         options: {
-            salt: 'this is my salt',
-            alphabet: '0123456789abcdef',
-        }
-    }, (err) => {
+        salt: 'this is my salt',
+        alphabet: '0123456789abcdef',
+    }
+}, (err) => {
 
-        if (err) {
-            throw err; // Something bad happened
-        }
-        // This call could be anywhere in the application, as long as server is accessible.
-        server.plugins['hapi-hashids'].encode(1234567); // b332db5
-        server.plugins['hapi-hashids'].decode('b332db5'); // [ 1234567 ]
-   });
+    if (err) {
+        throw err; // Something bad happened
+    }
+    // This call could be anywhere in the application, as long as server is accessible.
+    server.plugins['hapi-hashids'].encode(1234567); // b332db5
+    server.plugins['hapi-hashids'].decode('b332db5'); // [ 1234567 ]
+});
 ```
 
 #### Hex encoding/decoding
