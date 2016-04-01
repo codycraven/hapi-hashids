@@ -1,6 +1,6 @@
 {
   "name": "hapi-hashids",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hapi.js plugin wrapper for hashids.",
   "main": "lib/index.js",
   "tonicExampleFilename": "tonic-example.js",
